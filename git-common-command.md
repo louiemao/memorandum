@@ -201,4 +201,5 @@ $ git push [remote] --force
 
 推送所有分支到远程仓库  
 $ git push [remote] --all
- 
+
+![git-common-command](git-common-command.png)
