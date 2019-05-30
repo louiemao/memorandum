@@ -84,6 +84,7 @@ $ git branch [branch-name]
 
 新建一个分支，并切换到该分支  
 $ git checkout -b [branch]
+git checkout -b dev(本地分支名称) origin/dev(远程分支名称)
 
 新建一个分支，指向指定commit  
 $ git branch [branch] [commit]
