@@ -111,7 +111,7 @@ $ git cherry-pick [commit]
 $ git branch -d [branch-name]
 
 删除远程分支  
-$ git push origin --delete [branch-name]
+$ git push origin --delete [branch-name]  
 $ git branch -dr [remote/branch]
 
 ## 六、查看信息
