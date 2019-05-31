@@ -1,6 +1,5 @@
 # 常用 Git 命令清单 
 ## 一、新建代码库
-
 在当前目录新建一个Git代码库  
 $ git init
 
@@ -19,12 +18,15 @@ $ git config --list
 编辑Git配置文件  
 $ git config -e [--global]
 
+查看用户名和地址  
+git config user.name  
+git config user.email  
+
 设置提交代码时的用户信息  
-$ git config [--global] user.name "[name]"
-$ git config [--global] user.email "[email address]"
+git config [--global] user.name "[name]"  
+git config [--global] user.email "[email address]"  
 
 ## 三、增加/删除文件
-
 添加指定文件到暂存区  
 $ git add [file1] [file2] ...
 
@@ -48,7 +50,6 @@ $ git rm --cached [file]
 $ git mv [file-original] [file-renamed]
 
 ## 四、代码提交
-
 提交暂存区到仓库区  
 $ git commit -m [message]
 
@@ -69,7 +70,6 @@ $ git commit --amend -m [message]
 $ git commit --amend [file1] [file2] ...
 
 ## 五、分支
-
 列出所有本地分支  
 $ git branch
 
@@ -98,8 +98,14 @@ $ git checkout [branch-name]
 切换到上一个分支  
 $ git checkout -
 
+查看本地分支与远程分支的映射关系（注意是双v）  
+git branch -vv
+
 建立追踪关系，在现有分支与指定的远程分支之间  
 $ git branch --set-upstream [branch] [remote-branch]
+
+撤销本地分支与远程分支的映射关系  
+git branch --unset-upstream
 
 合并指定分支到当前分支  
 $ git merge [branch]
