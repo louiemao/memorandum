@@ -15,6 +15,8 @@ mvn install 在本地Repository中安装jar
 
 mvn clean 清除产生的项目
 
+mvn -D maven.test.skip=true clean deploy
+
 mvn eclipse:eclipse 生成eclipse项目
 
 mvn idea:idea 生成idea项目
