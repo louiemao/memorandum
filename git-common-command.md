@@ -1,4 +1,12 @@
 # 常用 Git 命令清单 
+[Git的网站](https://git-scm.com/downloads)下载并安装最新版本的Git
+
+查看当前安装的Git的版本  
+git --version
+
+git版本更新  
+git clone https://github.com/git/git
+
 ## 一、新建代码库
 在当前目录新建一个Git代码库  
 $ git init
