@@ -110,7 +110,7 @@ $ git checkout -
 git branch -vv
 
 建立追踪关系，在现有分支与指定的远程分支之间  
-$ git branch --set-upstream [branch] [remote-branch]
+$ git branch --set-upstream-to [remote-branch]
 
 撤销本地分支与远程分支的映射关系  
 git branch --unset-upstream
