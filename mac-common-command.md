@@ -41,12 +41,12 @@ nl|给文件加上行号|nl file1 >file2
 # 安全操作
 命令名|功能描述|使用举例
 --|--|--
-passwd	修改用户密码	passwd
-chmod	改变文件或目录的权限	chmod ug+x filename
-umask	定义创建文件的权限掩码	umask 027
-chown	改变文件或目录的属主	chown newowner filename
-chgrp	改变文件或目录的所属组	chgrp staff filename
-xlock	给终端上锁	xlock -remote
+passwd|修改用户密码|passwd
+chmod|改变文件或目录的权限|chmod ug+x filename
+umask|定义创建文件的权限掩码|umask 027
+chown|改变文件或目录的属主|chown newowner filename
+chgrp|改变文件或目录的所属组|chgrp staff filename
+xlock|给终端上锁|xlock -remote
 
 # 编程操作
 命令名|功能描述|使用举例
@@ -59,10 +59,10 @@ xde|图形用户界面调试工具|xde a.out
 # 进程操作
 命令名|功能描述|使用举例
 --|--|--
-ps	显示进程当前状态	ps u
-kill	终止进程	kill -9 30142
-nice	改变待执行命令的优先级	nice cc -c *.c
-renice	改变已运行进程的优先级	renice +20 32768
+ps|显示进程当前状态|ps u
+kill|终止进程|kill -9 30142
+nice|改变待执行命令的优先级|nice cc -c *.c
+renice|改变已运行进程的优先级|renice +20 32768
 
 # 时间操作
 命令名|功能描述|使用举例
@@ -74,37 +74,37 @@ time|统计程序的执行时间|time a.out
 # 网络与通信操作
 命令名|功能描述|使用举例
 --|--|--
-telnet	远程登录	telnet hpc.sp.net.edu.cn
-rlogin	远程登录	rlogin hostname -l username
-rsh	在远程主机执行指定命令	rsh f01n03 date
-ftp	在本地主机与远程主机之间传输文件	ftp ftp.sp.net.edu.cn
-rcp	在本地主机与远程主机之间复制文件	rcp file1 host1:file2
-ping	给一个网络主机发送回应请求	ping hpc.sp.net.edu.cn
-mail	阅读和发送电子邮件	mail
-write	给另一用户发送报文	write username pts/1
-mesg	允许或拒绝接收报文	mesg n
+telnet|远程登录|telnet hpc.sp.net.edu.cn
+rlogin|远程登录|rlogin hostname -l username
+rsh|在远程主机执行指定命令|rsh f01n03 date
+ftp|在本地主机与远程主机之间传输文件|ftp ftp.sp.net.edu.cn
+rcp|在本地主机与远程主机之间复制文件|rcp file1 host1:file2
+ping|给一个网络主机发送回应请求|ping hpc.sp.net.edu.cn
+mail|阅读和发送电子邮件|mail
+write|给另一用户发送报文|write username pts/1
+mesg|允许或拒绝接收报文|mesg n
 
 # Korn Shell 命令
 命令名|功能描述|使用举例
 --|--|--
-history	列出最近执行过的 几条命令及编号	history
-r	重复执行最近执行过的 某条命令	r -2
-alias	给某个命令定义别名	alias del=rm -i
-unalias	取消对某个别名的定义	unalias del
+history|列出最近执行过的几条命令及编号|history
+r|重复执行最近执行过的某条命令|r -2
+alias|给某个命令定义别名|alias del=rm -i
+unalias|取消对某个别名的定义|unalias del
 
 # 其它命令
 命令名|功能描述|使用举例
 --|--|--
-uname	显示操作系统的有关信息	uname -a
-clear	清除屏幕或窗口内容	clear
-env	显示当前所有设置过的环境变量	env
-who	列出当前登录的所有用户	who
-whoami	显示当前正进行操作的用户名	whoami
-tty	显示终端或伪终端的名称	tty
-stty	显示或重置控制键定义	stty -a
-du	查询磁盘使用情况	du -k subdir
-df	显示文件系统的总空间和可用空间	df /tmp
-w	显示当前系统活动的总信息	w
+uname|显示操作系统的有关信息|uname -a
+clear|清除屏幕或窗口内容|clear
+env|显示当前所有设置过的环境变量|env
+who|列出当前登录的所有用户|who
+whoami|显示当前正进行操作的用户名|whoami
+tty|显示终端或伪终端的名称|tty
+stty|显示或重置控制键定义|stty -a
+du|查询磁盘使用情况|du -k subdir
+df|显示文件系统的总空间和可用空间|df /tmp
+w|显示当前系统活动的总信息|w
 
 
 
