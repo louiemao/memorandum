@@ -1,24 +1,26 @@
 # 常用 Git 命令清单 
 [Git的网站](https://git-scm.com/downloads)下载并安装最新版本的Git
 
-查看当前安装的Git的版本  
+查看当前安装的Git的版本 
 git --version
 
-git版本更新  
+git版本更新 
 git clone https://github.com/git/git
 
 ## 一、新建代码库
-在当前目录新建一个Git代码库  
+在当前目录新建一个Git代码库 
 $ git init
 
-新建一个目录，将其初始化为Git代码库  
+新建一个目录，将其初始化为Git代码库 
 $ git init [project-name]
 
-下载一个项目和它的整个代码历史  
+下载一个项目和它的整个代码历史 
 $ git clone [url]
 
 ## 二、配置
-Git的设置文件为.gitconfig，它可以在用户主目录下（全局配置），也可以在项目目录下（项目配置）。
+Git的设置文件为.gitconfig，
+它可以在用户主目录下（全局配置），
+也可以在项目目录下（项目配置）。
 
 显示当前的Git配置  
 $ git config --list
@@ -216,5 +218,23 @@ $ git push [remote] --force
 
 推送所有分支到远程仓库  
 $ git push [remote] --all
+
+
+
+
+## 八、push后的回退操作 谨慎使用
+git reset --hrad HEAD`     `# 撤销工作目录中所有未提交文件的修改内容
+git checkout HEAD <file>`   `# 撤销指定的未提交文件的修改内容
+git revert <commit>`      `# 撤销指定的提交
+git log --before=``"1 days"`   `# 退回到之前1天的版本
+git checkout [file]`      `# 恢复暂存区的指定文件到工作区
+git checkout [commit] [file]` `# 恢复某个commit的指定文件到暂存区和工作区
+git checkout .`        `# 恢复暂存区的所有文件到工作区
+git reset [file]`       `# 重置暂存区的指定文件，与上一次commit保持一致，但工作区不变
+git reset --hard`       `# 重置暂存区与工作区，与上一次commit保持一致
+git reset [commit]`      `# 重置当前分支的指针未指定commit，同时重置暂存区，但工作区不变
+git reset --hard [commit]`   `# 重置当前分支的HEAD未指定commit，同时重置暂存区和工作区，与指定commit一致
+git reset --keep [commit]`   `# 重置当前HEAD未指定commit，但保持暂存区和工作区不变
+
 
 ![git-common-command](git-common-command.png)
